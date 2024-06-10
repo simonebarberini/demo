@@ -12,7 +12,7 @@ public class Quadro {
     private Long id;
     private String title;
     private String author;
-    private String year;
+    private String anno;
     public Long getId() {
         return id;
     }
@@ -31,11 +31,11 @@ public class Quadro {
     public void setAuthor(String author) {
         this.author = author;
     }
-    public String getYear() {
-        return year;
+    public String getAnno() {
+        return anno;
     }
-    public void setYear(String year) {
-        this.year = year;
+    public void setAnno(String anno) {
+        this.anno = anno;
     }
 
     

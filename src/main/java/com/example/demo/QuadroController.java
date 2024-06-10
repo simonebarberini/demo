@@ -41,9 +41,9 @@ public class QuadroController {
         }
     }
 
-    @GetMapping("/year/{year}")
-    public ResponseEntity<Quadro> getPaintingsByYear(@PathVariable int year) {
-         Optional<Quadro> quadro = quadroRepository.findByYear(year);
+    @GetMapping("/anno/{anno}")
+    public ResponseEntity<Quadro> getPaintingsByYear(@PathVariable String anno) {
+         Optional<Quadro> quadro = quadroRepository.findByAnno(anno);
         if(quadro.isPresent()){
             return ResponseEntity.ok(quadro.get());
         }else{
